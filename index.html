@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <script>
+     function clicked(){
+        //  console.log("Hello world")
+        //  alert("HEllo wolrd")
+        var a=document.getElementById("demo").innerHTML
+        console.log(a)
+        document.getElementById("demo").innerHTML="hai wolRd"
+     }
+
+     function on(){
+         document.getElementById("light").src='turnon.jpg'
+
+     }
+
+     
+     function off(){
+         document.getElementById("light").src='bulbon.webp'
+
+     }
+
+     function change(){
+         document.getElementById("demo").style.color="green"
+         document.getElementById("demo").style.fontSize="80px"
+     }
+    </script>
+
+    <style>
+    h1{
+        color: violet;
+    }
+    </style>
+</head>
+<body>
+    <h1 id="demo">Hello</h1>
+    <!-- <button type="button" onclick="clicked()">click me</button> -->
+
+    <img id="light" src="bulbon.webp" width="200" height="200" onmouseover="on()" onmouseout="off()">
+<button type="button" onclick="change()">change</button>
+    <button type="button" onclick="on()">on</button>
+    <button type="button" onclick="off()">off</button>
+
+
+
+</body><!DOCTYPE html>
+
+</html>
